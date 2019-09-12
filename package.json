@@ -1,0 +1,17 @@
+{
+	"name" : "com.pitgan.objectpool",
+	"version" : "0.0.0",
+	"displayName" : "Objet Pool",
+	"description" : "Initializes objects and stores them to be used and recycled later",
+	"unity" : "2018.3",
+	"unityRelease" : "3f1",
+	"keywords" : [
+		"object",
+		"pool",
+		"pooling",
+		"pooler"
+	],
+	"author" : {
+		"name" : "pitgan"
+	}
+}

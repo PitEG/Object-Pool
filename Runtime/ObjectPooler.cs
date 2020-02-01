@@ -8,13 +8,6 @@ namespace PitGan {
 		public ObjectPool[] objectsToPool;
 		private Dictionary<int, ObjectPool> objectPools;
 
-		private static GameObject instance;
-		public static ObjectPooler objectPoolerInstance;
-
-		public static GameObject Instance {
-			get { return instance; }
-		}
-
 		//gets by gameobject hashcode
 		public GameObject Get(GameObject gameObject) {
 			int key = gameObject.GetHashCode();
@@ -28,8 +21,6 @@ namespace PitGan {
 		}
 
 		private void Awake() {
-			instance = gameObject;
-			objectPoolerInstance = this;
 			objectPools = new Dictionary<int, ObjectPool>();
 			PoolObjects();
 		}

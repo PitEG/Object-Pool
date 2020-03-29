@@ -20,6 +20,11 @@ namespace PitGan {
 			return nextObject;
 		}
 
+    //gets by Poolable Object
+    public IPoolable Get(IPoolable gameObject) { 
+      return null;
+    }
+
 		private void Awake() {
 			objectPools = new Dictionary<int, ObjectPool>();
 			PoolObjects();
@@ -103,4 +108,11 @@ namespace PitGan {
 			}
 		}
 	}
+
+  public interface IPoolable {
+    GameObject Spawn();
+    void Despawn();
+  }
+
+  //end namespace 
 }
